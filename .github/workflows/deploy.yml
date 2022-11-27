@@ -3,15 +3,15 @@ name: Build and deploy .NET application to Container App silo
 on:
   push:
     branches:
-    - main
+    - deploy
 
 env:
   
   # alphanumeric string under 14 characters
-  RESOURCE_GROUP_NAME: apwfeatureflagsample
+  RESOURCE_GROUP_NAME: RG_apwfeatureflagsample
 
   # specify your preferred region
-  REGION: westeurope
+  REGION: eastus
 
   FRONTEND_DOCKER: FeatureFlagsWithContainerApps/Dockerfile
   FRONTEND_IMAGE: frontend
